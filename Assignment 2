@@ -1,0 +1,27 @@
+ CREATE TABLE STUDENT (
+    Personid int NOT NULL AUTO_INCREMENT,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (Personid)
+);
+--insert
+INSERT INTO Student VALUES (101, Akhil, BCA101, 85, 1);    
+INSERT INTO Student VALUES (102, muhil, BCA104, 78, 2);  
+INSERT INTO Student VALUES (103, Bheem, BCA102, 80, 3);  
+--retrieve
+SELECT * FROM STUDENT;
+
+--update
+
+UPDATE Student
+SET 
+    lastname = 'Janet'
+WHERE
+    Personid = 3;
+
+--delete
+DELETE FROM Student WHERE Personid=3;
+
+--retrieve
+SELECT * FROM Student;
