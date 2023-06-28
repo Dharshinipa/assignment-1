@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int i,j;
+	clrscr();
+	for(i=0;i<5;i++)
+	{
+		printf("\n");
+		for(j=0;j<4;j++)
+		if(j==0 || (i==0 && i+j<=2) || (i==4 && i+j<=6)        || j==3 && (i+j)>3 && i+j<=6)
+			printf("%2c",'*');
+		else
+			printf("%2c",' ');
+	}
+	getch();
+}  
